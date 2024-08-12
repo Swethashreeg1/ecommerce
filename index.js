@@ -2,11 +2,13 @@ const express =  require("express");
 const productRoutes=require("./routes/productRoutes")
 const userRoutes=require("./routes/userRoutes")
 const cartRoutes=require("./routes/cartRoutes")
-const orderRoutes=require("./routes/orderRoutes")
+const cors = require("cors")
+// const orderRoutes=require("./routes/orderRoutes")
 const app=express();
 
 const mongoose=require('mongoose');
 app.use(express.json());
+app.use(cors());
 mongoose.connect(
     "mongodb+srv://swethashreeg:swethashree@cluster0.emjny3i.mongodb.net/ecommerence"
 ).then(()=>{

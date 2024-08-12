@@ -1,55 +1,55 @@
-const mongoose = require('mongoose');
-const orderSchema = new mongoose.Schema({
-    user_id:{
-        type:String,
-        require:true,
+// const mongoose = require('mongoose');
+// const orderSchema = new mongoose.Schema({
+//     user_id:{
+//         type:String,
+//         require:true,
 
-    },
-    user_email:{
-        type:String,
-        required:true
-    },
-    cust_name:{
-        type:String,
-        required:true
-    },
-    cust_phno:{
-        type:Number,
-        required:true
-    },
-    cust_address:{
-        type:String,
-        required:true
-    },
-    orderDate:{
-        type:Date,
-        default:Date.now,
+//     },
+//     user_email:{
+//         type:String,
+//         required:true
+//     },
+//     cust_name:{
+//         type:String,
+//         required:true
+//     },
+//     cust_phno:{
+//         type:Number,
+//         required:true
+//     },
+//     cust_address:{
+//         type:String,
+//         required:true
+//     },
+//     orderDate:{
+//         type:Date,
+//         default:Date.now,
         
-    },
-    estDate:{
-        type:Date,
+//     },
+//     estDate:{
+//         type:Date,
         
-    },
-    tot_Amount:{
-        type:Number,
+//     },
+//     tot_Amount:{
+//         type:Number,
 
-    },
-    orderStatus:{
-        type:String,
+//     },
+//     orderStatus:{
+//         type:String,
 
-    },
-    products:[{
-        product_id:{
-            type:String,
-            required:true
-        },
-        quantity:{
-            type:Number,
-            required:true
-        }
-    }]
+//     },
+//     products:[{
+//         product_id:{
+//             type:String,
+//             required:true
+//         },
+//         quantity:{
+//             type:Number,
+//             required:true
+//         }
+//     }]
 
 
-});
-const orderModel = mongoose.model('order',orderSchema);
-module.exports=orderModel;
+// });
+// const orderModel = mongoose.model('order',orderSchema);
+// module.exports=orderModel;
