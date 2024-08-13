@@ -28,7 +28,7 @@ console.log(user_id)
         );
         res.status(200).json({cartItem:CartItems,subTotal});
     }catch(err){
- res.status(500).json({message:"Server error",err});
+        res.status(500).json({message:"Server error",err});
     }
     
 };
